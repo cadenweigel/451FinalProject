@@ -1,4 +1,4 @@
-INSERT INTO `final_project_db`.`Coaches`(TeamID,ArenaID,CoachID,OwnerID,TeamName,TeamAbbr,Wins,Losses,Division) VALUES
+INSERT INTO `final_project_db`.`Teams`(TeamID,ArenaID,CoachID,OwnerID,TeamName,TeamAbbr,Wins,Losses,Division) VALUES
  (1001,2025,3023,5001,'Atlanta Hawks','ATL',36,46,'Southeast')
 ,(1002,2027,3015,5002,'Boston Celtics','BOS',64,18,'Atlantic')
 ,(1003,2003,3016,5003,'Brooklyn Nets','BRK',32,50,'Atlantic')

@@ -1,4 +1,4 @@
-INSERT INTO `final_project_db`.`Coaches`(AgentID,AgentName) VALUES
+INSERT INTO `final_project_db`.`Agents`(AgentID,AgentName) VALUES
  (5001,'Jeff Schwartz')
 ,(5002,'Rich Paul')
 ,(5003,'Mark Bartelstein')
