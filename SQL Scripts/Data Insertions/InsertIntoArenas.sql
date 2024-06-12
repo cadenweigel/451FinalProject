@@ -1,4 +1,4 @@
-INSERT INTO `final_project_db`.`Arenas`(ArenaID,TeamID,Attendance,City,State,Country,Name) VALUES
+INSERT INTO `final_project_db`.`Arenas`(ArenaID,TeamID,Attendance,ArenaCity,ArenaState,ArenaCountry,ArenaName) VALUES
  (2025,1001,16986,'Atlanta','Georgia','USA','State Farm Arena')
 ,(2027,1002,19156,'Boston','Massachusetts','USA','TD Garden')
 ,(2003,1003,17568,'Brooklyn','New York','USA','Barclays Center')
