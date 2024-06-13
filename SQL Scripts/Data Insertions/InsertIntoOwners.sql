@@ -1,4 +1,4 @@
-INSERT INTO `final_project_db`.`Coaches`(OwnerID,TeamID,OwnerName,YearPurchased) VALUES
+INSERT INTO `final_project_db`.`Owners`(OwnerID,TeamID,OwnerName,YearPurchased) VALUES
  (5001,1001,'Hawks Basketball, Inc.',2015)
 ,(5002,1002,'Boston Basketball Partners',2002)
 ,(5003,1003,'J Tsai Sports',2019)
