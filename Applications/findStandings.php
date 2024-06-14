@@ -22,41 +22,41 @@ $standing = mysqli_real_escape_string($conn, $standing);
 //query will be different based on the value of standing
 if ($standing == "all"){
     $query = "SELECT final_project_db.Teams.TeamName, final_project_db.Teams.Wins, final_project_db.Teams.Losses 
-              FROM final_project_db.Teams ORDER BY final_project_db.Teams.Wins DESC";
+              FROM final_project_db.Teams ORDER BY final_project_db.Teams.Wins DESC;";
 }
 else if ($standing == "west"){
     $query = "SELECT final_project_db.Teams.TeamName, final_project_db.Teams.Wins, final_project_db.Teams.Losses
               FROM final_project_db.Teams JOIN final_project_db.Divisions ON final_project_db.Teams.Division = Divisions.Division
-              WHERE  final_project_db.Divisions.Conference = "Western" ORDER BY final_project_db.Teams.Wins DESC";
+              WHERE  final_project_db.Divisions.Conference = "Western" ORDER BY final_project_db.Teams.Wins DESC;";
 }
 else if ($standing == "east"){
     $query = "SELECT final_project_db.Teams.TeamName, final_project_db.Teams.Wins, final_project_db.Teams.Losses
               FROM final_project_db.Teams JOIN final_project_db.Divisions ON final_project_db.Teams.Division = Divisions.Division
-              WHERE  final_project_db.Divisions.Conference = "Eastern" ORDER BY final_project_db.Teams.Wins DESC";
+              WHERE  final_project_db.Divisions.Conference = "Eastern" ORDER BY final_project_db.Teams.Wins DESC;";
 }
 else if ($standing == "central"){
     $query = "SELECT final_project_db.Teams.TeamName, final_project_db.Teams.Wins, final_project_db.Teams.Losses 
-              FROM final_project_db.Teams WHERE Division = "Central" ORDER BY Wins DESC";
+              FROM final_project_db.Teams WHERE Division = "Central" ORDER BY Wins DESC;";
 }
 else if ($standing == "atlantic"){
   $query = "SELECT final_project_db.Teams.TeamName, final_project_db.Teams.Wins, final_project_db.Teams.Losses 
-            FROM final_project_db.Teams WHERE Division = "Atlantic" ORDER BY Wins DESC";
+            FROM final_project_db.Teams WHERE Division = "Atlantic" ORDER BY Wins DESC;";
 }
 else if ($standing == "southeast"){
   $query = "SELECT final_project_db.Teams.TeamName, final_project_db.Teams.Wins, final_project_db.Teams.Losses 
-            FROM final_project_db.Teams WHERE Division = "Southeast" ORDER BY Wins DESC";
+            FROM final_project_db.Teams WHERE Division = "Southeast" ORDER BY Wins DESC;";
 }
 else if ($standing == "northwest"){
   $query = "SELECT final_project_db.Teams.TeamName, final_project_db.Teams.Wins, final_project_db.Teams.Losses 
-            FROM final_project_db.Teams WHERE Division = "Northwest" ORDER BY Wins DESC";
+            FROM final_project_db.Teams WHERE Division = "Northwest" ORDER BY Wins DESC;";
 }
 else if ($standing == "pacific"){
 $query = "SELECT final_project_db.Teams.TeamName, final_project_db.Teams.Wins, final_project_db.Teams.Losses 
-          FROM final_project_db.Teams WHERE Division = "Pacific" ORDER BY Wins DESC";
+          FROM final_project_db.Teams WHERE Division = "Pacific" ORDER BY Wins DESC;";
 }
 else if ($standing == "southwest"){
 $query = "SELECT final_project_db.Teams.TeamName, final_project_db.Teams.Wins, final_project_db.Teams.Losses 
-          FROM final_project_db.Teams WHERE Division = "Southwest" ORDER BY Wins DESC";
+          FROM final_project_db.Teams WHERE Division = "Southwest" ORDER BY Wins DESC;";
 }
 ?>
 

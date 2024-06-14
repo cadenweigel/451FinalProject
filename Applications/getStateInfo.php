@@ -16,7 +16,13 @@ or die('Error connecting to MySQL server.');
 $state = $_POST['state'];
 $state = mysqli_real_escape_string($conn, $state);
 
-$query = "";
+$queryCollege = "SELECT final_project_db.Colleges.CollegeName, final_project_db.Colleges.CollegeCity, final_project_db.Colleges.CollegeState
+                 FROM final_project_db.Colleges WHERE final_project_db.Colleges.CollegeState = ";
+$queryCollege = $queryCollege."'".$state."';";
+
+$queryArena = "SELECT final_project_db.Arenas.ArenaName, final_project_db.Arenas.ArenaCity, final_project_db.Arenas.ArenaState
+               FROM final_project_db.Arenas WHERE final_project_db.Arenas.ArenaState = ";
+$queryArena = $queryArena."'".$state."';";
 
 ?>
 

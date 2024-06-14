@@ -13,9 +13,34 @@ or die('Error connecting to MySQL server.');
 <body bgcolor="white">
   
 <?php 
-$player = $_POST['player'];
-$player = mysqli_real_escape_string($conn, $player);
-$query = ""; 
+$playerFirst = $_POST['playerFirst'];
+$playerFirst = mysqli_real_escape_string($conn, $playerFirst);
+$playerLast = $_POST['playerLast'];
+$playerLast = mysqli_real_escape_string($conn, $playerLast);
+
+$query = "SELECT 
+    final_project_db.P.FirstName,
+    final_project_db.P.LastName,
+    final_project_db.T.TeamName,
+    final_project_db.C.CollegeName,
+    final_project_db.CO.CoachName,
+    final_project_db.A.AgentName
+FROM 
+    final_project_db.Players P
+JOIN 
+    final_project_db.Teams T ON P.TeamID = T.TeamID
+JOIN 
+    final_project_db.Colleges C ON P.CollegeID = C.CollegeID
+JOIN 
+    final_project_db.Coaches CO ON T.CoachID = CO.CoachID
+JOIN 
+    final_project_db.Agents A ON P.AgentID = A.AgentID
+WHERE 
+    P.FirstName = ";
+    
+$query = $query."'".$playerFirst."' AND P.LastName = ";
+$query = $query."'".$playerLast"' ;";
+
 ?>
 
 <p> The query: <p>
@@ -32,7 +57,7 @@ while($row = mysqli_fetch_array($result, MYSQLI_BOTH))
   {
     print "\n";
     //These should be columns in the table
-    print "$row[FirstName] $row[LastName]  Team: $row[TeamName]  Coach: $row[CoachName]  Agent: $row[AgentName]";
+    print "Name: $row[FirstName] $row[LastName]  Team: $row[TeamName]  College: $row[CollgeName] Coach: $row[CoachName]  Agent: $row[AgentName]";
   }
 print "</pre>";
 
