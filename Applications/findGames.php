@@ -13,8 +13,8 @@ or die('Error connecting to MySQL server.');
 <body bgcolor="white">
   
 <?php 
-$player = $_POST['player'];
-$player = mysqli_real_escape_string($conn, $player);
+$team = $_POST['team'];
+$team = mysqli_real_escape_string($conn, $team);
 $query = ""; 
 ?>
 
@@ -32,7 +32,7 @@ while($row = mysqli_fetch_array($result, MYSQLI_BOTH))
   {
     print "\n";
     //These should be columns in the table
-    print "$row[FirstName] $row[LastName]  Team: $row[TeamName]  Coach: $row[CoachName]  Agent: $row[AgentName]";
+    print "$row";
   }
 print "</pre>";
 
