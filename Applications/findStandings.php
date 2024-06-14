@@ -17,7 +17,7 @@ or die('Error connecting to MySQL server.');
   
 <?php 
 $standing = $_POST['standings'];
-$standing = mysqli_real_escape_string($conn, $state);
+$standing = mysqli_real_escape_string($conn, $standing);
 
 //query will be different based on the value of standing
 if ($standing == "all"){
