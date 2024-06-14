@@ -54,7 +54,7 @@ $orderID = $row[HighestOrderID] + 1;
 //trying prepared statemnts for this
 $query = "INSERT INTO Purchases (OrderID, PlayerID, TeamID, Cost, JerseyType) VALUES (?, ?, ?, ?, ?)";
 $stmt = $conn->prepare($query);
-$stmt->bind_param("iiiis", $OrderID, $PlayerID, $TeamID, $Cost, $JerseyType); //iiiis means intintintintstr
+$stmt->bind_param("iiiis", $orderID, $idresult, $team, $cost, $type); //iiiis means intintintintstr
 $stmt->execute();
 ?>
 
