@@ -16,7 +16,7 @@ Below you can find the applications for my project. Each individual application 
 <h2>Standings Generator </h2> 
 <p>Pick the whole league, a conference, or a division</p>
 <p>Will send you to a page with the results!</p>
-<form action="findStandings.php" method="POST">
+<form action="findStandings.html" method="POST">
        <label for="standings">Choose a collection of teams to get standings from:</label>
               <select name="standings" id="standings">
               <option value="all">NBA</option>
@@ -40,7 +40,7 @@ Below you can find the applications for my project. Each individual application 
 <h2>Player Information Lookup</h2>
 <p>Enter a player name, get information about them</p>
 <p>Enter a first name in the first field and a last name in the second field</p>
-<form action="getPlayerInfo.php" method="POST">
+<form action="getPlayerInfo.html" method="POST">
        <input type="text" name="playerFirst"> 
        <input type="text" name="playerLast"> <br>
        <input type="submit" value="submit">
@@ -51,7 +51,7 @@ Below you can find the applications for my project. Each individual application 
 
 <h2>College + Arena Lookup</h2>
 <p>Enter a state, get any college or arena that exists in that state</p>
-<form action="getStateInfo.php" method="POST">
+<form action="getStateInfo.html" method="POST">
        <input type="text" name="state"> <br>
        <input type="submit" value="submit">
        <input type="reset" value="erase">
@@ -61,7 +61,7 @@ Below you can find the applications for my project. Each individual application 
 
 <h2>Arena Attendance Lookup</h2>
 <p>Pick a team, get the total attendance at their arena</p>
-<form action="findGames.php" method="POST">
+<form action="findGames.html" method="POST">
        <label for="standings">Choose a team:</label>
        <select name="standings" id="standings">
               <option value="1001">Atlanta Hawks</option>
@@ -101,7 +101,7 @@ Below you can find the applications for my project. Each individual application 
 
 <h2>Team Roster + Salary Information</h2>
 <p>Pick a team, get the roster, salary of each player, and the average salary</p>
-<form action="getRoster.php" method="POST">
+<form action="getRoster.html" method="POST">
        <label for="standings">Choose a team:</label>
        <select name="standings" id="standings">
               <option value="1001">Atlanta Hawks</option>
