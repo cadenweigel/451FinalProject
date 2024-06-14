@@ -39,19 +39,104 @@ Below you can find the applications for my project. Each individual application 
 
 <h2>Player Information Lookup</h2>
 <p>Enter a player name, get information about them</p>
-<!--Form goes here!-->
+<p>Enter a first name in the first field and a last name in the second field</p>
+<form action="getPlayerInfo.php" method="POST">
+       <input type="text" name="playerFirst"> 
+       <input type="text" name="playerLast"> <br>
+       <input type="submit" value="submit">
+       <input type="reset" value="erase">
+</form>
 <p>Example names to test: LeBron James, Kevin Durant, Payton Pritchard</p>
 <br><br>
 
 <h2>College + Arena Lookup</h2>
 <p>Enter a state, get any college or arena that exists in that state</p>
-<!--Form goes here!-->
+<form action="getStateInfo.php" method="POST">
+       <input type="text" name="state"> <br>
+       <input type="submit" value="submit">
+       <input type="reset" value="erase">
+</form>
 <p>Example states to test: Oregon, North Carolina, California</p>
 <br><br>
 
 <h2>Arena Attendance Lookup</h2>
 <p>Pick a team, get the total attendance at their arena</p>
-<!--Form goes here!-->
+<form action="findGames.php" method="POST">
+       <label for="standings">Choose a team:</label>
+       <select name="standings" id="standings">
+              <option value="1001">Atlanta Hawks</option>
+              <option value="1002">Boston Celtics</option>
+              <option value="1003">Brooklyn Nets</option>
+              <option value="1004">Charlotte Hornets</option>
+              <option value="1005">Chicago Bulls</option>
+              <option value="1006">Cleveland Caveliers</option>
+              <option value="1007">Dallas Mavericks</option>
+              <option value="1008">Denver Nuggets</option>
+              <option value="1009">Detroit Pistons</option>
+              <option value="1010">Golden State Warriors</option>
+              <option value="1011">Houston Rockets</option>
+              <option value="1012">Indiana Pacers</option>
+              <option value="1013">Los Angeles Clippers</option>
+              <option value="1014">Los Angeles Lakers</option>
+              <option value="1015">Memphis Grizzlies</option>
+              <option value="1016">Miami Heat</option>
+              <option value="1017">Milwaukee Bucks</option>
+              <option value="1018">Minnesota Timberwolves</option>
+              <option value="1019">New Orleans Pelicans</option>
+              <option value="1020">New York Knicks</option>
+              <option value="1021">Oklahoma City Thunder</option>
+              <option value="1022">Orlando Magic</option>
+              <option value="1023">Philadelphia 76ers</option>
+              <option value="1024">Phoenix Suns</option>
+              <option value="1025">Portland Trail Blazers</option>
+              <option value="1026">Sacramento Kings</option>
+              <option value="1027">San Antonio Spurs</option>
+              <option value="1028">Toronto Raptors</option>
+              <option value="1029">Utah Jazz</option>
+              <option value="1030">Washington Wizards</option>
+       </select>
+       <input type="submit" value="submit">
+</form>
+<br><br>
+
+<h2>Team Roster + Salary Information</h2>
+<p>Pick a team, get the roster, salary of each player, and the average salary</p>
+<form action="getRoster.php" method="POST">
+       <label for="standings">Choose a team:</label>
+       <select name="standings" id="standings">
+              <option value="1001">Atlanta Hawks</option>
+              <option value="1002">Boston Celtics</option>
+              <option value="1003">Brooklyn Nets</option>
+              <option value="1004">Charlotte Hornets</option>
+              <option value="1005">Chicago Bulls</option>
+              <option value="1006">Cleveland Caveliers</option>
+              <option value="1007">Dallas Mavericks</option>
+              <option value="1008">Denver Nuggets</option>
+              <option value="1009">Detroit Pistons</option>
+              <option value="1010">Golden State Warriors</option>
+              <option value="1011">Houston Rockets</option>
+              <option value="1012">Indiana Pacers</option>
+              <option value="1013">Los Angeles Clippers</option>
+              <option value="1014">Los Angeles Lakers</option>
+              <option value="1015">Memphis Grizzlies</option>
+              <option value="1016">Miami Heat</option>
+              <option value="1017">Milwaukee Bucks</option>
+              <option value="1018">Minnesota Timberwolves</option>
+              <option value="1019">New Orleans Pelicans</option>
+              <option value="1020">New York Knicks</option>
+              <option value="1021">Oklahoma City Thunder</option>
+              <option value="1022">Orlando Magic</option>
+              <option value="1023">Philadelphia 76ers</option>
+              <option value="1024">Phoenix Suns</option>
+              <option value="1025">Portland Trail Blazers</option>
+              <option value="1026">Sacramento Kings</option>
+              <option value="1027">San Antonio Spurs</option>
+              <option value="1028">Toronto Raptors</option>
+              <option value="1029">Utah Jazz</option>
+              <option value="1030">Washington Wizards</option>
+       </select>
+       <input type="submit" value="submit">
+</form>
 <br><br>
 
 </body>

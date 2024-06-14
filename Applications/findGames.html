@@ -13,7 +13,7 @@ or die('Error connecting to MySQL server.');
 <body bgcolor="white">
   
 <?php 
-$team = $_POST['team'];
+$team = $_POST['team']; //this is the team id!
 $team = mysqli_real_escape_string($conn, $team);
 $query = ""; 
 ?>
