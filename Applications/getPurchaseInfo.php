@@ -55,7 +55,7 @@ while($row = mysqli_fetch_array($result, MYSQLI_BOTH))
   {
     print "\n";
     //These should be columns in the table
-    print "Top Best-Selling Jerseys"
+    print "Top Best-Selling Jerseys";
     print "Player: $row['FirstName'] $row['LastName']  Jersey Type: $row['MostCommonType]";
   }
 print "</pre>";

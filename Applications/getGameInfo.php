@@ -77,9 +77,9 @@ ON
 ?>
 
 <p> The querys: <p>
-<?php print $query1; ?>
-<?php print $query2; ?>
-<?php print $query3; ?>
+<?php print $query1; print "\n";?>
+<?php print $query2; print "\n";?>
+<?php print $query3; print "\n";?>
 
 <p> Results of queries: <p>
 
