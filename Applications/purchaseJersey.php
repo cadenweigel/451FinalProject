@@ -42,7 +42,7 @@ WHERE final_project_db.Players.FirstName = ";
 $idquery = $idquery."'".$playerFirst."' AND final_project_db.Players.LastName = ";
 $idquery = $idquery."'".$playerLast."' ;";
 $idresult = mysqli_query($conn, $idquery) or die(mysqli_error($conn));
-$row = mysqli_fetch_array($result, MYSQLI_BOTH);
+$row = mysqli_fetch_array($idresult, MYSQLI_BOTH);
 $playerID = $row[PlayerID];
 
 //to get a unique orderID, we need the highest current OrderID (they all increment by 1 each row) and add 1 to it

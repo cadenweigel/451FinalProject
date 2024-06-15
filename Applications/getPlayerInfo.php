@@ -39,7 +39,7 @@ WHERE
     P.FirstName = ";
     
 $query = $query."'".$playerFirst."' AND P.LastName = ";
-$query = $query."'".$playerLast" ;";
+$query = $query."'". $playerLast."';";
 
 ?>
 

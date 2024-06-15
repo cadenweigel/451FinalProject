@@ -18,8 +18,8 @@ $team = mysqli_real_escape_string($conn, $team);
 $query = "SELECT 
           final_project_db.Teams.TeamID,
           final_project_db.Teams.TeamName,
-          COUNT(final_project_db.Games.GameID) AS HomeGames,
-          (COUNT(final_project_db.Games.GameID) * final_project_db.Arenas.attendance) AS TotalAttendance
+          COUNT(final_project_db.Games.ArenaID) AS HomeGames,
+          (COUNT(final_project_db.Games.ArenaID) * final_project_db.Arenas.attendance) AS TotalAttendance
           FROM 
           final_project_db.Teams
           JOIN 
