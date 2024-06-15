@@ -50,13 +50,14 @@ $query = "SELECT
 $result = mysqli_query($conn, $query)
 or die(mysqli_error($conn));
 
+print "Top Best-Selling Jerseys";
+
 print "<pre>";
 while($row = mysqli_fetch_array($result, MYSQLI_BOTH))
   {
     print "\n";
     //These should be columns in the table
-    print "Top Best-Selling Jerseys";
-    print "Player: $row['FirstName'] $row['LastName']  Jersey Type: $row['MostCommonType]";
+    print "Player: $row[FirstName] $row[LastName]  Jersey Type: $row[MostCommonType]";
   }
 print "</pre>";
 

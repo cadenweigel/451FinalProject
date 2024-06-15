@@ -78,8 +78,11 @@ ON
 
 <p> The querys: <p>
 <?php print $query1; print "\n";?>
+<br>
 <?php print $query2; print "\n";?>
+<br>
 <?php print $query3; print "\n";?>
+
 
 <p> Results of queries: <p>
 
@@ -116,7 +119,7 @@ while($row = mysqli_fetch_array($result3, MYSQLI_BOTH))
   {
     print "\n";
     //These should be columns in the table
-    print "Team: $row[TeamName]  Arena: $row[ArenaName]  Home Hames: $row[GameCount]";
+    print "Team: $row[TeamName]  Arena: $row[ArenaName]  Home Games: $row[GameCount]";
   }
 print "</pre>";
 
