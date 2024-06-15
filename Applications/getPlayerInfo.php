@@ -57,7 +57,7 @@ while($row = mysqli_fetch_array($result, MYSQLI_BOTH))
   {
     print "\n";
     //These should be columns in the table
-    print "Name: $row[FirstName] $row[LastName]  Team: $row[TeamName]  College: $row[CollgeName] Coach: $row[CoachName]  Agent: $row[AgentName]";
+    print "Name: $row[FirstName] $row[LastName]  Team: $row[TeamName]  College: $row[CollegeName] Coach: $row[CoachName]  Agent: $row[AgentName]";
   }
 print "</pre>";
 

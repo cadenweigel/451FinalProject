@@ -43,7 +43,7 @@ $idquery = $idquery."'".$playerFirst."' AND final_project_db.Players.LastName = 
 $idquery = $idquery."'".$playerLast."' ;";
 $idresult = mysqli_query($conn, $idquery) or die(mysqli_error($conn));
 $row = mysqli_fetch_array($idresult, MYSQLI_BOTH);
-$playerID = $row[PlayerID];
+$playerID = $row['PlayerID'];
 
 //to get a unique orderID, we need the highest current OrderID (they all increment by 1 each row) and add 1 to it
 $orderquery = "SELECT MAX(final_project_db.Purchases.OrderID) AS HighestOrderID FROM final_project_db.Purchases";
