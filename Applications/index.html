@@ -37,51 +37,6 @@ Below you can find the applications for my project. Each individual application 
 </form> 
 <br> <br>
 
-<h2>Jersey Purchase Menu</h2>
-<p>Enter a Player's Name and a jersey style (Home, Away, Alternate, or Retro)</p>
-<p>And your order will be added to the database</p>
-<form action="purchaseJersey.php" method="POST">
-       <input type="text" name="playerFirst"> 
-       <input type="text" name="playerLast">
-       <input type="text" name="type">  <br>
-       <label for="standings">Choose a team:</label>
-       <select name="standings" id="standings">
-              <option value="1001">Atlanta Hawks</option>
-              <option value="1002">Boston Celtics</option>
-              <option value="1003">Brooklyn Nets</option>
-              <option value="1004">Charlotte Hornets</option>
-              <option value="1005">Chicago Bulls</option>
-              <option value="1006">Cleveland Caveliers</option>
-              <option value="1007">Dallas Mavericks</option>
-              <option value="1008">Denver Nuggets</option>
-              <option value="1009">Detroit Pistons</option>
-              <option value="1010">Golden State Warriors</option>
-              <option value="1011">Houston Rockets</option>
-              <option value="1012">Indiana Pacers</option>
-              <option value="1013">Los Angeles Clippers</option>
-              <option value="1014">Los Angeles Lakers</option>
-              <option value="1015">Memphis Grizzlies</option>
-              <option value="1016">Miami Heat</option>
-              <option value="1017">Milwaukee Bucks</option>
-              <option value="1018">Minnesota Timberwolves</option>
-              <option value="1019">New Orleans Pelicans</option>
-              <option value="1020">New York Knicks</option>
-              <option value="1021">Oklahoma City Thunder</option>
-              <option value="1022">Orlando Magic</option>
-              <option value="1023">Philadelphia 76ers</option>
-              <option value="1024">Phoenix Suns</option>
-              <option value="1025">Portland Trail Blazers</option>
-              <option value="1026">Sacramento Kings</option>
-              <option value="1027">San Antonio Spurs</option>
-              <option value="1028">Toronto Raptors</option>
-              <option value="1029">Utah Jazz</option>
-              <option value="1030">Washington Wizards</option>
-       </select>
-       <input type="submit" value="submit">
-       <input type="reset" value="erase">
-</form>
-<p>Examples to Test: LeBron James Home, Stephen Curry Retro</p>
-
 <h2>Player Information Lookup</h2>
 <p>Enter a player name, get information about them</p>
 <p>Enter a first name in the first field and a last name in the second field</p>
@@ -184,6 +139,51 @@ Below you can find the applications for my project. Each individual application 
 </form>
 <p>Examples to Test: Portland Trail Blazers, Phoenix Suns</p>
 <br><br>
+
+<h2>Jersey Purchase Menu</h2>
+<p>Enter a Player's Name and a jersey style (Home, Away, Alternate, or Retro)</p>
+<p>And your order will be added to the database</p>
+<form action="purchaseJersey.php" method="POST">
+       <input type="text" name="playerFirst"> 
+       <input type="text" name="playerLast">
+       <input type="text" name="type">  <br>
+       <label for="team">Choose a team:</label>
+       <select name="team" id="team">
+              <option value="1001">Atlanta Hawks</option>
+              <option value="1002">Boston Celtics</option>
+              <option value="1003">Brooklyn Nets</option>
+              <option value="1004">Charlotte Hornets</option>
+              <option value="1005">Chicago Bulls</option>
+              <option value="1006">Cleveland Caveliers</option>
+              <option value="1007">Dallas Mavericks</option>
+              <option value="1008">Denver Nuggets</option>
+              <option value="1009">Detroit Pistons</option>
+              <option value="1010">Golden State Warriors</option>
+              <option value="1011">Houston Rockets</option>
+              <option value="1012">Indiana Pacers</option>
+              <option value="1013">Los Angeles Clippers</option>
+              <option value="1014">Los Angeles Lakers</option>
+              <option value="1015">Memphis Grizzlies</option>
+              <option value="1016">Miami Heat</option>
+              <option value="1017">Milwaukee Bucks</option>
+              <option value="1018">Minnesota Timberwolves</option>
+              <option value="1019">New Orleans Pelicans</option>
+              <option value="1020">New York Knicks</option>
+              <option value="1021">Oklahoma City Thunder</option>
+              <option value="1022">Orlando Magic</option>
+              <option value="1023">Philadelphia 76ers</option>
+              <option value="1024">Phoenix Suns</option>
+              <option value="1025">Portland Trail Blazers</option>
+              <option value="1026">Sacramento Kings</option>
+              <option value="1027">San Antonio Spurs</option>
+              <option value="1028">Toronto Raptors</option>
+              <option value="1029">Utah Jazz</option>
+              <option value="1030">Washington Wizards</option>
+       </select>
+       <input type="submit" value="submit">
+       <input type="reset" value="erase">
+</form>
+<p>Examples to Test: LeBron James Home, Stephen Curry Retro</p>
 
 </body>
 </html>

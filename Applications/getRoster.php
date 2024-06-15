@@ -27,7 +27,7 @@ $query = "SELECT
          final_project_db.Teams ON final_project_db.Players.TeamID = final_project_db.Teams.TeamID
         WHERE 
          final_project_db.Players.TeamID = ";
-$query = $query."'".$team."';"; 
+$query = $query.$team.";"; 
 
 $query2 = "SELECT 
             final_project_db.Teams.TeamName,
@@ -38,7 +38,7 @@ $query2 = "SELECT
             final_project_db.Teams ON final_project_db.Players.TeamID = final_project_db.Teams.TeamID
             WHERE 
             final_project_db.Players.TeamID = ";
-$query = $query.$team." GROUP BY final_project_db.Teams.TeamName;";
+$query2 = $query2.$team." GROUP BY final_project_db.Teams.TeamName;";
 ?>
 
 <p> The query: <p>

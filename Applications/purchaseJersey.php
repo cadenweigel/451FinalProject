@@ -49,19 +49,34 @@ $playerID = $row['PlayerID'];
 $orderquery = "SELECT MAX(final_project_db.Purchases.OrderID) AS HighestOrderID FROM final_project_db.Purchases";
 $orderresult = mysqli_query($conn, $orderquery) or die(mysqli_error($conn));
 $row = mysqli_fetch_array($orderresult, MYSQLI_BOTH);
-$orderID = $row[HighestOrderID] + 1;
+$orderID = $row['HighestOrderID'] + 1;
 
-//trying prepared statemnts for this
-$query = "INSERT INTO Purchases (OrderID, PlayerID, TeamID, Cost, JerseyType) VALUES (?, ?, ?, ?, ?)";
-$stmt = $conn->prepare($query);
-$stmt->bind_param("iiiis", $orderID, $idresult, $team, $cost, $type); //iiiis means intintintintstr
-$stmt->execute();
+print $orderID;
+print "     ";
+print $playerID;
+print "     ";
+print $team;
+print "     ";
+print $cost;
+print "     ";
+print $type;
+
+$query = "INSERT INTO Purchases (OrderID, PlayerID, TeamID, Cost, JerseyType) VALUES (";
+$query = $query.$orderID.",";
+$query = $query.$playerID.",";
+$query = $query.$team.",";
+$query = $query.$cost.",";
+$query = $query."'".$type."' );";
+print $query;
+mysqli_query($conn, $query) or die(mysqli_error($conn));
 ?>
 
 <p> The query: <p>
-<?php print $stmt; ?>
+<?php print $query; ?>
 
 <p>Purchase Added!</p>
+
+mysqli_close($conn);
 
 </body>
 </html>
