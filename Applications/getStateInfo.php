@@ -26,10 +26,11 @@ $queryArena = $queryArena."'".$state."';";
 
 ?>
 
-<p> The query: <p>
-<?php print $query; ?>
+<p> The querys: <p>
+<?php print $queryArena; ?>
+<?php print $queryCollege; ?>
 
-<p> Result of query: <p>
+<p> Result of querys: <p>
 
 <?php
 //two queries

@@ -40,7 +40,7 @@ Below you can find the applications for my project. Each individual application 
 <h2>Jersey Purchase Menu</h2>
 <p>Enter a Player's Name and a jersey style (Home, Away, Alternate, or Retro)</p>
 <p>And your order will be added to the database</p>
-<form action="orderJersey.php" method="POST">
+<form action="purchaseJersey.php" method="POST">
        <input type="text" name="playerFirst"> 
        <input type="text" name="playerLast">
        <input type="text" name="type">  <br>
@@ -107,8 +107,8 @@ Below you can find the applications for my project. Each individual application 
 <h2>Arena Attendance Lookup</h2>
 <p>Pick a team, get the total attendance at their arena</p>
 <form action="findGames.php" method="POST">
-       <label for="standings">Choose a team:</label>
-       <select name="standings" id="standings">
+       <label for="team">Choose a team:</label>
+       <select name="team" id="team">
               <option value="1001">Atlanta Hawks</option>
               <option value="1002">Boston Celtics</option>
               <option value="1003">Brooklyn Nets</option>
@@ -147,8 +147,8 @@ Below you can find the applications for my project. Each individual application 
 <h2>Team Roster + Salary Information</h2>
 <p>Pick a team, get the roster, salary of each player, and the average salary</p>
 <form action="getRoster.php" method="POST">
-       <label for="standings">Choose a team:</label>
-       <select name="standings" id="standings">
+       <label for="team">Choose a team:</label>
+       <select name="team" id="team">
               <option value="1001">Atlanta Hawks</option>
               <option value="1002">Boston Celtics</option>
               <option value="1003">Brooklyn Nets</option>
