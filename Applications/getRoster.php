@@ -63,7 +63,7 @@ $result2 = mysqli_query($conn, $query2)
 or die(mysqli_error($conn));
 
 print "<pre>";
-while($row = mysqli_fetch_array($result, MYSQLI_BOTH))
+while($row = mysqli_fetch_array($result2, MYSQLI_BOTH))
   {
     print "\n";
     //These should be columns in the table
